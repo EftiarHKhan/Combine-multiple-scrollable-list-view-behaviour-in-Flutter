@@ -1,12 +1,12 @@
 # Combine-multiple-scrollable-list-view-behaviour-in-Flutter
 
-# To achieve this, you can use a `ScrollController` to listen to the scroll events of the first `ListView` and apply the same scroll offset to the second `ListView`. Here's how you can do it:
+## To achieve this, you can use a `ScrollController` to listen to the scroll events of the first `ListView` and apply the same scroll offset to the second `ListView`. Here's how you can do it:
 
 1. Create a `ScrollController` instance.
 2. Assign this `ScrollController` to the first `ListView`.
 3. Add a listener to the `ScrollController` that sets the scroll offset of the second `ListView` to match the first one.
 
-## Here's the code in Dart:
+### Here's the code in Dart:
 
 ```dart
 // Step 1: Create a ScrollController instance
@@ -58,7 +58,7 @@ Widget build(BuildContext context) {
 
 In this code, `_scrollController` is the `ScrollController` for the first `ListView`, and `_secondScrollController` is the `ScrollController` for the second `ListView`. When the first `ListView` is scrolled, the listener updates the scroll position of the second `ListView` to match.
 
-## Please replace `items` with your actual data source. Also, make sure to dispose of the `ScrollController` in the `dispose` method to avoid memory leaks:
+### Please replace `items` with your actual data source. Also, make sure to dispose of the `ScrollController` in the `dispose` method to avoid memory leaks:
 
 ```dart
 @override
